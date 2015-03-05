@@ -90,21 +90,21 @@ or stuff like
 # 
 # Directory structure
 # |- projects.yaml
-# |+ bin/
+# |\ bin/
 # ||- command-split
 # ||- ci
 # ||- download
-# ||+ build/
+# ||\ build/
 # |||- build
 # |||- django
 # |||- static-assets
 # ||
-# ||+ test/
+# ||\ test/
 # |||- test
 # |||- django
 # |||- smoke
 # ||
-# ||+ deploy/
+# ||\ deploy/
 # |||- deploy
 # |||- django
 # |||- static-assets
