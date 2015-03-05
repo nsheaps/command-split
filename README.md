@@ -85,27 +85,28 @@ $> git push origin master
 ```
 or stuff like
 ```bash
+# ./bin/ci is a shell script that changes working dir 
+# to ./bin and executes ./command-split
+# 
 # Directory structure
-# |- ./ci  #shell script that changes working dir to ./bin and executes ./command-split
-# |-+ ./bin/
-# | |- ./command-split
-# | |- ./download
-# | |-+ ./build/
-# | | | ./build
-# | | | ./django
-# | | | ./static-assets
-# | |
-# | |-+ ./test/
-# | | | ./test
-# | | | ./django
-# | | | ./smoke
-# | |
-# | |-+ ./deploy/
-# | | | ./deploy
-# | | | ./django
-# | | | ./static-assets
-# |
-# |-+ 
+# |+ ./bin/
+# ||- ./command-split
+# ||- ./ci
+# ||- ./download
+# ||+ ./build/
+# |||- ./build
+# |||- ./django
+# |||- ./static-assets
+# ||
+# ||+ ./test/
+# |||- ./test
+# |||- ./django
+# |||- ./smoke
+# ||
+# ||+ ./deploy/
+# |||- ./deploy
+# |||- ./django
+# |||- ./static-assets
 $> ci download static-assets-project # this project's type is a static-assets project
 Downloading 'static-assets-project' to '~/dev/static-assets-project'...
 50 MB downloaded.
