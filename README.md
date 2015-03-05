@@ -72,7 +72,7 @@ If it's two or longer it checks for and executes the scripts in the following or
 
 The check only goes 2 arguments deep to ensure that you don't get files named `push-github-cleopatra-origin-master`.
 
-It's designed to be aliased and symlinked to from /usr/local/bin to let you do neat fancy stuff like:
+It's designed to be aliased and symlinked to from /usr/local/bin to let you do neat stuff like:
 ```bash
 $> ls
 command-split
