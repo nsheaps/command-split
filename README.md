@@ -64,10 +64,11 @@ $ command-split launch chrome
 The script first sees how long the arguments are. If they are 2 or longer it treats the first two as a possible command. Otherwise, it just attempts to execute the first argument in the current working directory.
 
 If it's two or longer it checks for and executes the scripts in the following order, assuming that you run `./command-split <argument1> <argument2> <argument3> ... <argumentN>`
- # `cd ./<argument1>/ && ./<argument2> <argument3> ... <argumentN>`
- # `cd ./<argument1>/ && ./<argument1> <argument2> <argument3> ... <argumentN>`
- # `./<argument1>-<argument2> <argument3> ... <argumentN>`
- # `./<argument1> <argument2> <argument3> ... <argumentN>`
+
+1. `cd ./<argument1>/ && ./<argument2> <argument3> ... <argumentN>`
+2. `cd ./<argument1>/ && ./<argument1> <argument2> <argument3> ... <argumentN>`
+3. `./<argument1>-<argument2> <argument3> ... <argumentN>`
+4. `./<argument1> <argument2> <argument3> ... <argumentN>`
 
 The check only goes 2 arguments deep to ensure that you don't get files named `push-github-cleopatra-origin-master`.
 
