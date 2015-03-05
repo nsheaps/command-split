@@ -133,7 +133,7 @@ Deployed 'static-assets-project' to Akamai.
 ```
 
 
-=== Possible future features
-==== Unknown extensions
+### Possible future features
+#### Unknown extensions
 This is a low priority because you're most likely on a *nix machine that can run executable files without an extension.
 
