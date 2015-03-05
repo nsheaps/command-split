@@ -108,9 +108,10 @@ or stuff like
 # |||- deploy
 # |||- django
 # |||- static-assets
-$> ci download static-assets-project # this project's type is a static-assets project
+$> ci download static-assets-project '~/dev/static-assets-project'
 Downloading 'static-assets-project' to '~/dev/static-assets-project'...
-50 MB downloaded.
+'static-assets-project' (type: 'static-assets') downloaded.
+50 MB transferred.
 $> ci build static-assets-project
 > Building 'static-assets-project' as project type 'static-assets'
 26 new assets generated.
