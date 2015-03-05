@@ -89,6 +89,7 @@ or stuff like
 # to ./bin and executes ./command-split
 # 
 # Directory structure
+# |- projects.yaml
 # |+ ./bin/
 # ||- ./command-split
 # ||- ./ci
