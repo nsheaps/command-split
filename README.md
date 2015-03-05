@@ -1,10 +1,10 @@
-= command-split
+# command-split
 An easily extendible script to enable you to chain commands together that get executed as scripts. The best use of this is to split commands for an app into small logical segments so that it enforces an easy to maintain structure.
 
-=== How to use
+### How to use
 Below you can find some examples of use. This is a very simple script so it's uses are minimal, but through some creative naming you can make it link a lot of components together.
 
-==== Simplest use
+#### Simplest use
 Executes ~/command-split mylittlepony
 ```bash
 $ ls -lha
@@ -31,7 +31,7 @@ drwxr-xr-x+ 71 nsheaps nsheaps   2.4K Mar  5 00:32 ..
 $ command-split tell-my-mom "I Really Like Pie"
 ```
 
-==== Secondary commands
+#### Secondary commands
 Secondary commands give you the capabilty to chain commands together with a variety of supported directory structures.
 
 TODO: Insert more verbose examples
@@ -60,7 +60,7 @@ $ command-split launch chrome
 
 ```
 
-=== How it works
+### How it works
 The script first sees how long the arguments are. If they are 2 or longer it treats the first two as a possible command. Otherwise, it just attempts to execute the first argument in the current working directory.
 
 If it's two or longer it checks for and executes the scripts in the following order, assuming that you run `./command-split <argument1> <argument2> <argument3> ... <argumentN>`
